@@ -288,3 +288,10 @@ a:visited {
     color: rgb(48, 48, 216);
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-family: 'Gideon Roman', cursive;
+}
