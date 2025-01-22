@@ -105,14 +105,14 @@ main {
 .content .section {
     flex: 2 1 2 calc(33.333% - 20px);
     background: rgb(193, 102, 96);
-    padding: 6.5%;
+    padding: 6%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .content .business {
     flex: 2 1 2 calc(33.333% - 20px);
     background: rgb(193, 102, 96);
-    padding: 7.5%;
+    padding: 7%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
