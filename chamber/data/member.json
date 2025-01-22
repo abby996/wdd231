@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Tech Innovators",
+        "address": "123 Tech Street, Silicon Valley, CA",
+        "phone": "509-4522-1111",
+        "website": "https://www.techinnovators.com",
+        "image": "tech-innovators.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Eco Solutions",
+        "address": "456 Greenway Blvd, Austin, TX",
+        "phone": "509-4311-2222",
+        "website": "https://www.ecosolutions.com",
+        "image": "eco-solutions.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "BizHub Co.",
+        "address": "789 Business Ave, Chicago, IL",
+        "phone": "509-4765-3333",
+        "website": "https://www.bizhubco.com",
+        "image": "bizhub-co.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Code Ninjas",
+        "address": "987 Code Drive, Seattle, WA",
+        "phone": "509-3928-4444",
+        "website": "https://www.codeninjas.com",
+        "image": "code-ninjas.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "HealthFirst",
+        "address": "654 Wellness Rd, Denver, CO",
+        "phone": "509-3174-5555",
+        "website": "https://www.healthfirst.com",
+        "image": "healthfirst.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Design Studio",
+        "address": "321 Creative Lane, Miami, FL",
+        "phone": "509-3055-6666",
+        "website": "https://www.designstudio.com",
+        "image": "design-studio.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Tech Pros",
+        "address": "159 Tech Park, San Francisco, CA",
+        "phone": "509-5390-7777",
+        "website": "https://www.techpros.com",
+        "image": "tech-pros.png",
+        "membershipLevel": 3
+    }
+]

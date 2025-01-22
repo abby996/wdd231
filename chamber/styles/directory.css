@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
 
 
@@ -82,6 +88,13 @@ main {
     cursor: pointer;
 }
 
+
+#hero-img {
+    border: #eabc8e;
+    width: 100px;
+    grid-template-columns: repeat(5, 1fr);
+}
+
 .content {
     display: flex;
     flex-wrap: wrap;
@@ -99,7 +112,7 @@ main {
 .content .business {
     flex: 2 1 2 calc(33.333% - 20px);
     background: rgb(193, 102, 96);
-    padding: 8.3%;
+    padding: 7.5%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -148,4 +161,37 @@ p {
     color: #010101;
     text-align: center;
     transition: all 0.3s ease-in-out;
+}
+
+footer a {
+    display: inline;
+    width: 3%;
+    color: rgb(4, 143, 143);
+}
+
+
+.social,
+a {
+    display: inline;
+}
+
+.member-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+}
+
+.member-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.member-card h3 {
+    margin: 0.5rem 0;
+}
+
+.member-card p {
+    margin: 0.2rem 0;
 }
