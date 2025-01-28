@@ -175,23 +175,111 @@ a {
     display: inline;
 }
 
-.member-card {
+/* Container Styles */
+#members-container.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+#members-container.list {
+    display: block;
+}
+
+.business {
+    background: #f9f9f9;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 1rem;
-    background-color: #f9f9f9;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.member-card img {
-    width: 100%;
+.business img {
+    max-width: 100%;
     height: auto;
+    margin-bottom: 8px;
+}
+
+.business h3 {
+    margin: 8px 0;
+    font-size: 1.25rem;
+}
+
+
+.member-card a:hover {
+    text-decoration: underline;
+}
+
+/* Toggle View: List Style */
+.list-view .member-card {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    gap: 1rem;
+}
+
+.list-view img {
+    max-width: 50px;
+}
+
+
+body {
+    background-color: #ffffff;
+    /* Fond clair */
+    color: #333333;
+    /* Texte sombre */
+}
+
+a {
+    color: #007BFF;
+    /* Bleu accessible */
+    text-decoration: none;
+}
+
+.logo {
+    height: 50px;
+    /* Ajustez la taille */
+    width: auto;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+/* Grid View */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+/* List View */
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Common Styles for Business Items */
+.business {
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease;
+}
+
+.business:hover {
+    transform: scale(1.02);
+}
+
+footer .social img {
+    width: 32px;
+    /* Set desired width */
+    height: 32px;
+    /* Set desired height */
+    object-fit: contain;
+    /* Ensures the image retains its aspect ratio */
+    margin: 0 8px;
+    /* Add spacing between icons */
     border-radius: 4px;
-}
-
-.member-card h3 {
-    margin: 0.5rem 0;
-}
-
-.member-card p {
-    margin: 0.2rem 0;
+    /* Optional: Add rounded corners for aesthetics */
 }

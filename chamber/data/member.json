@@ -1,58 +1,65 @@
 [
     {
-        "name": "Tech Innovators",
-        "address": "123 Tech Street, Silicon Valley, CA",
-        "phone": "509-4522-1111",
-        "website": "https://www.techinnovators.com",
-        "image": "tech-innovators.png",
-        "membershipLevel": 3
+        "name": "Free Fire",
+        "address": "123 Gaming Ave, Port-au-Prince, Haiti",
+        "phone": "509-555-1234",
+        "website": "https://myfreegame.com",
+        "image": "images/business1.jpeg",
+        "membershipLevel": 1,
+        "description": "Mobile gaming platform offering competitive tournaments."
     },
     {
-        "name": "Eco Solutions",
-        "address": "456 Greenway Blvd, Austin, TX",
-        "phone": "509-4311-2222",
-        "website": "https://www.ecosolutions.com",
-        "image": "eco-solutions.png",
-        "membershipLevel": 2
+        "name": "InfoMax",
+        "address": "45 Tech St, Port-au-Prince, Haiti",
+        "phone": "509-444-1234",
+        "website": "https://mybusinessecho.com",
+        "image": "images/business2.jpeg",
+        "membershipLevel": 2,
+        "description": "IT consulting and support services for businesses."
     },
     {
-        "name": "BizHub Co.",
-        "address": "789 Business Ave, Chicago, IL",
-        "phone": "509-4765-3333",
-        "website": "https://www.bizhubco.com",
-        "image": "bizhub-co.png",
-        "membershipLevel": 1
+        "name": "MEMS SA",
+        "address": "88 Innovation Lane, Cap-Haïtien, Haiti",
+        "phone": "509-4311-4334",
+        "website": "https://mems.com",
+        "image": "images/business3.jpeg",
+        "membershipLevel": 3,
+        "description": "Leading provider of micro-electromechanical systems."
     },
     {
-        "name": "Code Ninjas",
-        "address": "987 Code Drive, Seattle, WA",
-        "phone": "509-3928-4444",
-        "website": "https://www.codeninjas.com",
-        "image": "code-ninjas.png",
-        "membershipLevel": 3
+        "name": "Beauty Dah",
+        "address": "23 Fashion Blvd, Jacmel, Haiti",
+        "phone": "509-565-7890",
+        "website": "https://beautydah.com",
+        "image": "images/business4.png",
+        "membershipLevel": 1,
+        "description": "Beauty and wellness products with natural ingredients."
     },
     {
-        "name": "HealthFirst",
-        "address": "654 Wellness Rd, Denver, CO",
-        "phone": "509-3174-5555",
-        "website": "https://www.healthfirst.com",
-        "image": "healthfirst.png",
-        "membershipLevel": 2
+        "name": "DINASA",
+        "address": "78 Energy Road, Port-au-Prince, Haiti",
+        "phone": "509-567-8912",
+        "website": "https://dinasa.com",
+        "image": "images/business5.jpeg",
+        "membershipLevel": 2,
+        "description": "National supplier of energy and petroleum products."
     },
     {
-        "name": "Design Studio",
-        "address": "321 Creative Lane, Miami, FL",
-        "phone": "509-3055-6666",
-        "website": "https://www.designstudio.com",
-        "image": "design-studio.png",
-        "membershipLevel": 1
+        "name": "DIGITOP",
+        "address": "102 Tech Park, Pétion-Ville, Haiti",
+        "phone": "509-478-3245",
+        "website": "https://digitop.com",
+        "image": "images/business6.png",
+        "membershipLevel": 3,
+        "description": "Digital marketing agency specializing in SEO and analytics."
     },
     {
-        "name": "Tech Pros",
-        "address": "159 Tech Park, San Francisco, CA",
-        "phone": "509-5390-7777",
-        "website": "https://www.techpros.com",
-        "image": "tech-pros.png",
-        "membershipLevel": 3
+        "name": "EcoBuild",
+        "address": "15 Green Way, Les Cayes, Haiti",
+        "phone": "509-678-9012",
+        "website": "https://ecobuild.com",
+        "image": "images/business7.jpeg",
+        "membershipLevel": 2,
+        "description": "Sustainable construction and building materials."
     }
 ]

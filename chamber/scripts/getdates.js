@@ -1,9 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-    // Update copyright year
-    const currentYear = new Date().getFullYear();
-    document.querySelector("footer p:first-of-type").textContent = `© ${currentYear} InnoTech Chamber of Commerce`;
+// Affiche l'année actuelle
+document.getElementById('current-year').textContent = new Date().getFullYear();
 
-    // Update last modified date
-    const lastModified = document.lastModified;
-    document.querySelector("footer p:last-of-type").textContent = `Last Modification: ${lastModified}`;
-});
+// Affiche la date de dernière modification
+document.getElementById('last-modified').textContent = document.lastModified;
