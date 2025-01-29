@@ -22,3 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // Set default view to grid
     applyGridView();
 });
+
+
+
