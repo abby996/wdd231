@@ -24,13 +24,20 @@
 </head>
 
 <body>
-    <header>
+    <header class="header" role="banner">
+        <img src="images/IMG_1942.WEBP" alt="innitech chamber of Commerce" class="logo">
+        <div class="header-content">
+
+        </div>
         <h1>InnoTech Chamber Commerce</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#">Home</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
         </nav>
+
+
     </header>
 
     <div class="hero">
@@ -39,34 +46,35 @@
     </div>
 
     <main>
+        <h2 class="home-title">Home</h2>
+        <div class="home-grid">
 
-        <div class="content">
 
-            <div class="section">
+            <section class="section event-section">
+                <h3 class="section-title">Current Events</h3>
+                <p>Stay updated with our latest events.</p>
+            </section>
 
-                <section id="events">
-                    <h2>Current Events</h2>
-                    <p>Stay updated with our latest events and networking opportunities.</p>
-                </section>
-            </div>
 
-            <div class="section">
-                <section id="weather">
-                    <h2>Weather Update</h2>
-                    <p>Temperature: <span id="temp"></span>&#8451;</p>
-                    <p>Condition: <span id="condition"></span></p>
-                    <p>3-day Forecast:</p>
-                    <ul id="forecast"></ul>
-                </section>
-            </div>
+            <section class="section weather-section">
+                <h3 class="section-title">Current Weather</h3>
+                <div class="weather-info">
+                    <img src="images/weather-icon.png" alt="Weather Icon" class="weather-icon" id="weather-icon">
+                    <div class="weather-details">
+                        <p class="temperature" id="current-temp">Loading...</p>
+                        <p id="description">Loading...</p>
+                    </div>
+                </div>
+                <h4>3-Day Forecast</h4>
+                <div id="forecast"></div>
+            </section>
 
-            <div class="section">
-                <section id="spotlight">
-                    <h2>Member Spotlights</h2>
-                    <div id="spotlight-container"></div>
-                </section>
-
-            </div>
+            <section class="section spotlight-section">
+                <h3 class="section-title">Company Spotlights</h3>
+                <div class="grid-container" id="spotlight-container">
+                    <!-- Spotlight members will be populated here via JavaScript -->
+                </div>
+            </section>
 
         </div>
     </main>
