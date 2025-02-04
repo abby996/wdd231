@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to InnoTech Chamber of Commerce">
+    <meta name="author" content="Abdias Brevil">
+    <title>Join us</title>
+
+
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/small-join.css">
+    <script src="scripts/join.js"></script>
+    <script src="scripts/getdates.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Join Our Chamber</h1>
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#">Home</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+            <a href="#">Discover</a>
+        </nav>
+
+    </header>
+
+    <main>
+        <form action="thankyou.html" method="get">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" title="Enter your first name" autocomplete="given-name"
+                required>
+            <br>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" title="Enter your last name" autocomplete="family-name"
+                required>
+            <br>
+
+            <label for="org-title">Organizational Title:</label>
+            <input type="text" id="org-title" name="organization-title" title="Enter your organizational title"
+                autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email"
+                placeholder="example@domain.com" required>
+            <br>
+
+            <label for="phone">Mobile Phone:</label>
+            <input type="tel" id="phone" name="mobile-phone" title="Enter your mobile phone number" autocomplete="tel"
+                required>
+            <br>
+
+            <label for="org-name">Business/Organization Name:</label>
+            <input type="text" id="org-name" name="organization" title="Enter your business or organization name"
+                autocomplete="organization" required>
+            <br>
+
+            <label for="membership">Membership Level:</label>
+            <select id="membership" name="membership-level" required>
+                <option value="np">NP Membership (Non-Profit, Free)</option>
+                <option value="bronze">Bronze Membership</option>
+                <option value="silver">Silver Membership</option>
+                <option value="gold">Gold Membership</option>
+            </select>
+            <br>
+
+            <label for="description">Business/Organization Description:</label>
+            <textarea id="description" name="organization-description" title="Describe your business or organization"
+                required></textarea>
+            <br>
+
+            <input type="hidden" id="timestamp" name="timestamp" value="">
+
+            <button type="submit">Submit Application</button>
+        </form>
+
+        <div class="membership-cards">
+            <div class="membership-card">
+                <h3>NP Membership</h3>
+                <a href="#np-modal">Learn More</a>
+            </div>
+            <div class="membership-card">
+                <h3>Bronze Membership</h3>
+                <a href="#bronze-modal">Learn More</a>
+            </div>
+            <div class="membership-card">
+                <h3>Silver Membership</h3>
+                <a href="#silver-modal">Learn More</a>
+            </div>
+            <div class="membership-card">
+                <h3>Gold Membership</h3>
+                <a href="#gold-modal">Learn More</a>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>WDD231 Class Project by Abdias Brevil</p>
+        <p>&copy; <span id="current-year"></span> InnoTech Chamber of Commerce</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+
+
+</body>
+
+</html>
