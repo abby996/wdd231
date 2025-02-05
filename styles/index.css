@@ -377,3 +377,51 @@ nav ul li a:hover {
 .cta-button:hover {
     background-color: #e68900;
 }
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+}
+
+
+.nav {
+    display: none;
+    /* Caché par défaut */
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.nav.open {
+    display: flex;
+    /* Affiche le menu quand 'open' est ajouté */
+}
+
+.menu-toggle {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
