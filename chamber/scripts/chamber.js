@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', fetchWeather);
 
 async function fetchMembers() {
     try {
-        const response = await fetch('./data/members.json');
+        const response = await fetch('data/members.json');
         const members = await response.json();
         const spotlightMembers = members.filter(member => member.membership_level === 1 || member.membership_level === 2);
         displayMembers(spotlightMembers);

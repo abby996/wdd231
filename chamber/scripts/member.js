@@ -1,4 +1,4 @@
-fetch("/chamber/data/members.json")
+fetch("data/members.json")
     .then(res => res.json())
     .then(data => {
         const members = data.members.filter(m => m.membership === "Gold" || m.membership === "Silver");
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     // Fetch member data
     async function fetchMembers() {
         try {
-            const response = await fetch("./data/members.json");
+            const response = await fetch("data/members.json");
             if (!response.ok) throw new Error("Failed to fetch members.");
             return await response.json();
         } catch (error) {
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 async function fetchMembers() {
     try {
-        const response = await fetch('./data/members.json');
+        const response = await fetch('data/members.json');
         if (!response.ok) throw new Error('Failed to fetch members data');
         const members = await response.json();
         displayMembers(members, 'grid');
