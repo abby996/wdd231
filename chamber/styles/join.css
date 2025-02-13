@@ -235,3 +235,102 @@ footer {
     color: white;
     margin-top: 20px;
 }
+
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #004466;
+    /* Dark blue background */
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    /* Center everything */
+    align-items: center;
+    position: relative;
+    /* Keeps the logo aligned */
+}
+
+/* Navigation Logo */
+.nav-logo {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    position: absolute;
+    left: 20px;
+    /* Keeps the logo on the left */
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background-color: #0088cc;
+    /* Light blue on hover */
+    border-radius: 5px;
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    /* Keeps menu button on the right */
+}
+
+/* Responsive Menu (for mobile) */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #004466;
+        text-align: center;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 12px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+}
