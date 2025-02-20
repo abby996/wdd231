@@ -1,0 +1,51 @@
+{
+    "places": [
+        {
+            "name": "Citadelle La Ferrière",
+            "image": "images/citadelle.webp",
+            "location": "Cap-Haitien, Nord"
+        },
+        {
+            "name": "Fort des Oliviers",
+            "image": "images/fort-des-oliviers.webp",
+            "description": " A historic fort built to protect the southern coast of Haiti from invasions",
+            "location": "Unknown"
+        },
+        {
+            "name": "Cannon",
+            "image": "images/cannon.webp",
+            "description": " A relic of Haiti's historic battles, a testament to the fight for independence. ",
+            "location": "Jeremie, Grand-Anse"
+        },
+        {
+            "name": "Bassin Bleu",
+            "image": "images/bassinbleu.webp",
+            "description": " <p>A series of natural pools with turquoise waters, surrounded by lush vegetation.",
+            "location": "Jacmel, Sud-Est"
+        },
+        {
+            "name": "Palais Sans Souci",
+            "image": "images/palais-sans-souci.webp",
+            "description": "The former residence of King Henri Christophe, now a UNESCO World Heritage site. ",
+            "location": " Milot , North"
+        },
+        {
+            "name": "Port National Naturel",
+            "image": "images/ile-a-vache.webp",
+            "description": "A nature reserve home to exceptional biodiversity and endemic species.",
+            "location": "Ile-a-Vache, Sud"
+        },
+        {
+            "name": "Ile de la Tortue",
+            "image": "images/iledelatortue.webp",
+            "description": "  A former pirate stronghold, now a popular destination for its pristine beaches.",
+            "location": "Ile de la Tortue"
+        },
+        {
+            "name": "Ville de Jacmel",
+            "image": "images/jacmel.webp",
+            "description": " Famous for its carnival, vibrant artisan culture, and colonial architecture.",
+            "location": "Jacmel, Sud-Est"
+        }
+    ]
+}
