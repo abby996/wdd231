@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-        fetch("data/places.json")
+        fetch("chamber/data/discover.json")
             .then(response => response.json())
             .then(data => {
                 const gridContainer = document.querySelector(".grid-container");
