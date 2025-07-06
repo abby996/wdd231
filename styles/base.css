@@ -1,0 +1,211 @@
+
+
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+  margin: 0;
+}
+
+
+/* Header - Mobile */
+header {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.brand img {
+  display: block;
+  width: 40px;
+  height: 40px;
+}
+
+.brand span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #444;
+}
+
+
+
+
+
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+   
+}
+
+.brand img {
+    width: 40px;
+    height: 40px;
+}
+
+.brand span {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #444;
+    white-space: nowrap; 
+}
+
+/* Bouton Hamburger - Positionné à droite */
+.hamburger {
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #444;
+    cursor: pointer;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 0;
+}
+
+.hamburger::before {
+    content: "\2630"; /* ☰ */
+}
+
+.hamburger.show::before {
+    content: "\00D7"; /* × */
+}
+
+/* Le reste de votre CSS reste inchangé */
+.navigation {
+    display: none;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+}
+
+
+/* Navigation mobile */
+.navigation {
+  display: none;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+.navigation li.current {
+  background-color: #eee;
+}
+
+.navigation a {
+  display: block;
+  padding: .8rem 10px;
+  text-decoration: none;
+  color: #cc5e33;
+  font-weight: 600;
+  transition: color 0.3s ease;
+  border-bottom: 1px solid #ddd;
+}
+
+.navigation a:hover {
+  background-color: #254a9e;
+}
+
+/* Main */
+main {
+  padding: 1rem;
+  max-width: 960px;
+  margin: auto;
+}
+
+main h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+/* Section titles */
+.about_me h2,
+.profile h2,
+.course-work h2 {
+  font-size: 1.25rem;
+  color: #444;
+  border-bottom: 2px solid #ddd;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Text */
+.about_me p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Profile photo */
+.profile img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Cards (cours) */
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.card li {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.card li:hover {
+  background-color: #f0f0f0;
+}
+
+.card li a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  padding: 1rem;
+  text-align: center;
+  color: #666;
+  margin-top: 2rem;
+}
+
+.social-media img {
+  width: 24px;
+  margin: 0 0.5rem;
+}

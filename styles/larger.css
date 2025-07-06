@@ -1,0 +1,294 @@
+/* larger.css - Desktop styles (min-width: 38rem) */
+
+@media only screen and (min-width: 38rem) {
+    /* Layout container */
+    header, main, nav, footer {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /* Header styles */
+    header {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+        padding: 10px 20px;
+        border-bottom: 1px solid #ddd;
+        background-color: #e7d6d6;
+        column-gap: 12px;
+    }
+
+    /* Branding */
+    .brand {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .brand img {
+        width: 48px;
+        height: auto;
+    }
+
+    .brand span {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: rgb(50, 50, 53);
+        white-space: nowrap;
+    }
+
+    /* Hide hamburger on desktop */
+    .hamburger {
+        display: none;
+    }
+
+    /* Navigation bar */
+    .navigation {
+        display: block !important;
+        background-color: #f0f0f0;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    .navigation li {
+        margin: 0;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+    }
+
+    .navigation a:hover {
+        background-color: #e07a5f;
+        color: white;
+    }
+
+    .navigation li.current a {
+        background-color: #cccccc;
+    }
+
+    /* Main content layout */
+    main {
+        display: grid;
+        grid-template-areas:
+            "title title"
+            "about profile"
+            "courses courses";
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        padding: 2rem;
+        background: rgb(215, 171, 171);
+    }
+
+    h1 {
+        grid-area: title;
+        margin: 0;
+    }
+
+    /* About Me section */
+    .about-section {
+        grid-area: about;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-me {
+        padding: 1.5rem;
+        font-size: 1.1rem;
+        line-height: 1.6;
+        flex-grow: 1;
+    }
+
+    /* Profile section */
+    .profile-section {
+        grid-area: profile;
+    }
+
+    .profile {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .profile img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+       
+        margin: 0 auto;
+    }
+
+    /* Courses section */
+    .courses-section {
+        grid-area: courses;
+        grid-column: 1 / -1;
+    }
+
+    .third-class {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto 1fr;
+        gap: 1rem;
+    }
+
+    .courses-filter {
+        margin-bottom: 1rem;
+    }
+
+    .courses-list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .course-item {
+        background: rgb(192, 255, 224);
+        border: 1px solid rgb(185, 120, 120);
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    .course-item a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #9c7777;
+        height: 100%;
+    }
+
+    .course-item:hover {
+        background-color: #a92f19;
+    }
+
+    /* Card styles */
+    .card {
+        border: 1px solid #111010;
+        border-radius: 5px;
+        background: rgb(219, 224, 224);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 1rem;
+        transition: all 0.3s ease;
+    }
+
+    .card h2 {
+        background-color: rgb(173, 204, 244);
+        color: black;
+        text-align: center;
+        border-radius: 5px;
+        padding: 0.5rem;
+        margin: -1rem -1rem 1rem -1rem;
+    }
+
+    /* Credits summary */
+    .credits-summary {
+        text-align: center;
+        margin-top: 1rem;
+        font-weight: bold;
+
+    }
+
+
+    /* Footer Styles */
+footer {
+    background-color: #43515f;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    border-top: 3px solid #e07a5f;
+    margin-top: 2rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.social-links p {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #f8f9fa;
+}
+
+.social-links a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-links img {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover img {
+    transform: scale(1.2);
+    opacity: 0.9;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: #dee2e6;
+}
+
+.footer-info p {
+    margin: 0;
+}
+
+#currentyear {
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
+#lastmodified {
+    color: #adb5bd;
+    font-style: italic;
+}
+
+/* Media Query for larger screens */
+@media (min-width: 768px) {
+    footer {
+        padding: 2.5rem;
+    }
+    
+    .social-links {
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .social-links img {
+        width: 36px;
+        height: 36px;
+    }
+    
+    .footer-info {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+}

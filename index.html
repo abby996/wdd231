@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abdias Brevil">
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Abdias Brevil - Portfolio page with projects and LinkedIn">
+    <title>WDD 231 - Frontend Dev I - Home - Abdias Brevil</title>
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+   
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+</head>
+<body>
+    <header> 
+        <div class="brand">
+            <img src="images/globe2.svg" alt="AbbyTech logo" class="logo">
+            <span>AbbyTech</span>
+            <button id="ham-btn" class="hamburger" aria-label="Menu">
+                
+            </button>
+        </div>
+    </header>
+    
+    <nav id="nav-btr" class="navigation">
+        <ul>
+            <li class="current">
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#chamber">Chamber Project</a>
+            </li>
+            <li> 
+                <a href="#final">Final Project</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 id="home">Home</h1>
+        
+        <section class="card about-section">
+            <h2>About Me</h2>
+            <div class="about-me">
+                <p>I am a computer networking technician (completed in 2023). I am currently studying programming and web development. After this semester I will receive my first certificate in web development.</p>
+            </div>
+        </section>
+        
+        <section class="card profile-section">
+            <h2>Student Photo</h2>
+            <div class="profile">
+                <img src="images/abdias_profil.png" alt="Abdias Brevil profile" class="profile-img">
+            </div>
+        </section>
+
+        <section class="card courses-section">
+            <h2>Web Certificate Courses</h2>
+            
+            <div class="courses-filter">
+                <ul class="courses-list">
+                    <li class="course-item" id="all-courses">
+                        <a href="#" target="_blank" rel="noopener">All Courses</a>
+                    </li>
+                    <li class="course-item" id="cse">
+                        <a href="#" target="_blank" rel="noopener">CSE</a>
+                    </li>
+                    <li class="course-item" id="wdd">
+                        <a href="#" target="_blank" rel="noopener">WDD</a>
+                    </li>
+                    <li class="course-item" id="wdd-130">
+                        <a href="#" target="_blank" rel="noopener">WDD 130</a>
+                    </li>
+                    <li class="course-item" id="wdd-131">
+                        <a href="#" target="_blank" rel="noopener">WDD 131</a>
+                    </li>
+                    <li class="course-item" id="wdd-231">
+                        <a href="#" target="_blank" rel="noopener">WDD 231</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <p class="credits-summary">The total credits for these courses is <span class="credits">6</span></p>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="social-links">
+            <p>Connect with me:</p>
+            <a href="#" aria-label="GitHub"><img src="images/github.svg" alt="GitHub"></a>
+            <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn"></a>
+            <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt="Twitter"></a>
+        </div>
+        <div class="footer-info">
+            <p>&copy; <span id="currentyear">2025</span> Abdias Brevil - Haiti</p>
+            <p>Last updated: <span id="lastmodified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
