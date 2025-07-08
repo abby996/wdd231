@@ -1,4 +1,5 @@
-// Mise à jour de l'année courante et de la date de modification
+
+
 document.addEventListener('DOMContentLoaded', function() {
     // Mettre à jour l'année courante
     const currentYearElement = document.getElementById('currentyear');

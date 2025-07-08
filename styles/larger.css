@@ -292,3 +292,58 @@ footer {
     }
 }
 }
+
+@media (min-width: 768px) {
+    /* Navigation */
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-top: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .navigation li {
+        border-bottom: none;
+    }
+
+    /* Main Content */
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    h1 {
+        grid-column: 1 / -1;
+    }
+
+    .course-work {
+        grid-column: 1 / -1;
+    }
+
+    /* Courses Grid */
+    .courses-container {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    /* Filter Options */
+    .filter-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .search-box {
+        width: 300px;
+        margin-bottom: 0;
+    }
+}

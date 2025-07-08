@@ -4,39 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Abdias Brevil">
-    <meta name="description" content="WDD 231 - Web Frontend Development I - Abdias Brevil - Portfolio page with projects and LinkedIn">
-    <title>WDD 231 - Frontend Dev I - Home - Abdias Brevil</title>
-    
+    <meta name="description" content="WDD 231 - Web Frontend Development portfolio">
+    <title>WDD 231 - Frontend Dev I - Abdias Brevil</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
-   
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
-    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
     <header> 
-        <div class="brand">
-            <img src="images/globe2.svg" alt="AbbyTech logo" class="logo">
-            <span>AbbyTech</span>
-            <button id="ham-btn" class="hamburger" aria-label="Menu">
-                
-            </button>
-        </div>
+      <div class="brand">
+        <img src="images/globe2.svg" alt="site logo" class="logo">
+        <span>AbbyTech</span>
+        <button id="ham-btn" class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+      </div>
     </header>
     
     <nav id="nav-btr" class="navigation">
         <ul>
-            <li class="current">
-                <a href="#home">Home</a>
-            </li>
-            <li>
-                <a href="#chamber">Chamber Project</a>
-            </li>
-            <li> 
-                <a href="#final">Final Project</a>
-            </li>
+            <li class="current"><a href="#home">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
         </ul>
     </nav>
 
@@ -57,47 +48,46 @@
             </div>
         </section>
 
-        <section class="card courses-section">
+        <section class="card course-work">
             <h2>Web Certificate Courses</h2>
-            
-            <div class="courses-filter">
-                <ul class="courses-list">
-                    <li class="course-item" id="all-courses">
-                        <a href="#" target="_blank" rel="noopener">All Courses</a>
-                    </li>
-                    <li class="course-item" id="cse">
-                        <a href="#" target="_blank" rel="noopener">CSE</a>
-                    </li>
-                    <li class="course-item" id="wdd">
-                        <a href="#" target="_blank" rel="noopener">WDD</a>
-                    </li>
-                    <li class="course-item" id="wdd-130">
-                        <a href="#" target="_blank" rel="noopener">WDD 130</a>
-                    </li>
-                    <li class="course-item" id="wdd-131">
-                        <a href="#" target="_blank" rel="noopener">WDD 131</a>
-                    </li>
-                    <li class="course-item" id="wdd-231">
-                        <a href="#" target="_blank" rel="noopener">WDD 231</a>
-                    </li>
-                </ul>
+            <div class="filter-controls">
+                <div class="search-box">
+                    <input type="text" id="course-search" placeholder="Search courses...">
+                    <span class="search-icon">🔍</span>
+                </div>
+                <div class="filter-options">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="wdd">WDD</button>
+                    <button class="filter-btn" data-filter="cse">CSE</button>
+                    <select class="credit-filter">
+                        <option value="all">All Credits</option>
+                        <option value="1-2">1-2 Credits</option>
+                        <option value="3-4">3-4 Credits</option>
+                    </select>
+                </div>
             </div>
-            
-            <p class="credits-summary">The total credits for these courses is <span class="credits">6</span></p>
+            <div class="courses-container" id="courses-container">
+                <!-- Courses will be inserted here dynamically -->
+            </div>
+            <div class="results-info">
+                <p class="credits">Total credits: <span id="total-credits">0</span></p>
+                <p class="completed-credits">Completed: <span id="completed-credits">0</span></p>
+            </div>
         </section>
     </main>
-    
+
     <footer>
-        <div class="social-links">
-            <p>Connect with me:</p>
+        <div class="social-media">
             <a href="#" aria-label="GitHub"><img src="images/github.svg" alt="GitHub"></a>
             <a href="#" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="LinkedIn"></a>
-            <a href="#" aria-label="Twitter"><img src="images/twitter-x.svg" alt="Twitter"></a>
+            <a href="#" aria-label="LinkedIn"><img src="images/twitter-x.svg" alt="twitter-x"></a>
         </div>
-        <div class="footer-info">
-            <p>&copy; <span id="currentyear">2025</span> Abdias Brevil - Haiti</p>
-            <p>Last updated: <span id="lastmodified"></span></p>
-        </div>
+        <p>&copy; <span id="current-year">2025</span> • Abdias Brevil | Haiti• WDD 231</p>
+           <p>" Last Updated " <span id="lastmodified"></span> </p>
     </footer>
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 </body>
 </html>
