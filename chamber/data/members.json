@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Marriott International",
+        "address": "2015",
+        "phone": "(509) 234-5678",
+        "url": "https://www.marriott.com/fr/default.mi",
+        "category": "Hospitality",
+        "membership": "Gold"
+    },
+    {
+        "name": "Digicel",
+        "address": "2008",
+        "phone": "(509) 345-6789",
+        "url": "https://www.digicelgroup.com/ht/fr",
+        "category": "Telecommunications",
+        "membership": "Silver"
+    },
+    {
+        "name": "Brana",
+        "address": "1984",
+        "phone": "(509) 456-7890",
+        "url": "https://brana.ht/",
+        "category": "Beverage",
+        "membership": "Gold"
+    },
+    {
+        "name": "NATCOM",
+        "address": "2012",
+        "phone": "(509) 567-8901",
+        "url": "https://natcom.com.ht",
+        "category": "Telecommunications",
+        "membership": "Silver"
+    },
+    {
+        "name": "Banj Haiti",
+        "address": "2023",
+        "phone": "(509) 678-9012",
+        "url": "https://banj.ht",
+        "category": "Technology",
+        "membership": "Gold"
+    },
+    {
+        "name": "Le Nouvelliste",
+        "address": "1898",
+        "phone": "(509) 789-0123",
+        "url": "https://lenouvelliste.com/",
+        "category": "Media",
+        "membership": "Silver"
+    },
+    {
+        "name": "Culligan",
+        "address": "2013",
+        "phone": "(509) 890-1234",
+        "url": "https://www.google.com/search?q=culligan+haiti",
+        "category": "Water Treatment",
+        "membership": "Bronze"
+    }
+]

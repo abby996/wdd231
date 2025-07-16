@@ -1,0 +1,289 @@
+/* Directory View Styles */
+.menu {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.menu button {
+    padding: 10px 20px;/* Directory View Styles */
+.menu {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.menu button {
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.menu button:hover {
+    background-color: #d0d0d0;
+}
+
+.menu button.active {
+    background-color: var(--accent);
+    color: var(--light);
+}
+
+#directory-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Grid View (unchanged) */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/
+/* Member Card (shared styles) */
+.member-card {
+    background-color: var(--light);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Grid-specific styles */
+.grid-view .member-image {
+    width: 100%;
+    height: 180px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.grid-view .member-info {
+    padding: 20px;
+}
+
+.grid-view .member-info h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.grid-view .member-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .list-view .member-card {
+        grid-template-columns: 2fr 2fr 1fr;
+    }
+    .list-view .member-meta {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .list-view .member-card {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+    .grid-view {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-view {
+        grid-template-columns: 1fr;
+    }
+    .menu button {
+        padding: 8px 15px;
+    }
+}
+    margin: 0 5px;
+    cursor: pointer;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.menu button:hover {
+    background-color: #d0d0d0;
+}
+
+.menu button.active {
+    background-color: var(--accent);
+    color: var(--light);
+}
+
+#directory-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+/* Grid View - Your Original Exact Code */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+
+
+/* Member Card */
+.member-card {
+    background-color: var(--light);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.member-image {
+    width: 100%;
+    height: 180px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--primary);
+}
+
+.member-info {
+    padding: 20px;
+}
+
+.member-info h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.member-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .list-view .member-card {
+        grid-template-columns: 2fr 2fr 1fr;
+    }
+    .list-view .member-meta {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .grid-view {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+    
+    .list-view .member-card {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-view {
+        grid-template-columns: 1fr;
+    }
+
+     .menu button {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* List View Styles */
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+
+
+
+/* List-Specific Card Styles */
+.list-view .member-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
+    padding: 15px;
+}
+
+.list-view .member-image {
+    display: none; /* Hide image in list view */
+}
+
+.list-view .member-info {
+    padding: 0;
+}
+
+.list-view .member-info h3 {
+    color: var(--primary);
+    margin: 0 0 5px 0;
+    font-size: 1.2rem;
+}
+
+.list-view .member-info p {
+    margin: 4px 0;
+    color: var(--dark);
+    line-height: 1.4;
+}
+
+
