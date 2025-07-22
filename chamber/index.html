@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abdias brevil">
+    <meta name="description" content="Official business directory of Innotech Plus Chamber of Commerce in Haiti">
+    <meta property="og:title" content="Innotech Plus Haiti Business Directory">
+    <meta property="og:description" content="Explore member businesses of Innotech Plus Chamber of Commerce in Haiti">
+    <meta property="og:url" content="https://www.innotechplus.com/directory">
+    <meta property="og:image" content="https://innotechplus.com/images/innotechplus.jpg">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/directory1.css">
+    <title>Innotech Plus Haiti Business Directory | Innotech Plus Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../images/globe2.svg" alt="Chamber Logo">
+            <span class="chamber-name">Innotech Plus Chamber of Commerce</span>
+        </div>
+
+        <nav>
+            <button id="hamburger" aria-label="Menu">☰</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory1.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><img src="../images/facebook.svg" alt="Facebook"></a>
+            <a href="#" aria-label="LinkedIn"><img src="../images/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="home-grid">
+          
+
+            <section class="current-section">
+                <h2>Current Events</h2>
+                <p class="section-intro">Stay updated with our latest events</p>
+                
+                <div class="event-card">
+                    <h3>Business Networking Mixer</h3>
+                    <p class="event-date">August 15, 2025 | 6:00 PM</p>
+                    <p class="event-description">Join local entrepreneurs for an evening of networking and collaboration.</p>
+                </div>
+
+                <div class="event-card">
+                    <h3>Economic Forum</h3>
+                    <p class="event-date">April 5, 2024 | 9:00 AM</p>
+                    <p class="event-description">Discussion on Haiti's economic growth and opportunities.</p>
+                </div>
+            </section>
+
+           <section class="weather-section">
+               <h2>3-Day Forecast</h2>
+                <h3>Current Weather</h3>
+               <div id="weather-container">
+          <!-- Current weather -->
+          <div id="current-weather">
+          <span id="current-temp">24°C</span>
+          <span id="weather-desc">Rain</span>
+          <img id="weather-icon" src=" https://openweathermap.org/img/w/10d.png">
+          </div>
+  
+          <!-- 3-day forecast -->
+         <div id="forecast">
+          <div class="forecast-day">
+          <span class="day">Tuesday</span>
+          <span class="temp">30°C</span>
+          <span id="weather-desc">Sunny</span>
+          <img id="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png">
+         </div>
+
+         <div class="forecast-day">
+           <span class="day">friday</span>
+            <span class="temp">21°C</span>
+            <span id="weather-desc">Cloud</span>  
+             <img id="weather-icon" src="https://openweathermap.org/img/w/04n.png">
+         </div>
+  
+
+       
+
+     </div>
+
+   
+
+</div>
+
+
+ <section class="hero">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="../images/citadelle-small.webp">
+                    <source media="(min-width: 601px)" srcset="../images/citadelle-large.webp">
+                    <img src="../images/citadelle-large.webp" alt="Citadelle Laferrière in Haiti" loading="lazy">
+                </picture>
+                <div class="hero-content">
+                    <h1>Welcome to Innotech Plus</h1>
+                    <a href="join.html" class="cta-button">Join the Chamber</a>
+                </div>
+            </section>
+ 
+                </div>
+                
+                
+                <div class="forecast-container" id="forecast"></div>
+            </section>
+
+           
+
+
+
+            <section class="spotlights">
+                <h2>Member Spotlights</h2>
+                <p class="section-intro">Featured Gold & Silver Members</p>
+                <div class="spotlight-container" id="spotlights">
+                    <!-- Spotlights will be dynamically inserted here -->
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="contact-info">
+              
+                <address>
+                    
+                </address>
+            </div>
+         
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Innotech Plus Chamber of Commerce</p>
+            <p>19 Main Street, Pétion-Ville, Haiti</p>
+                    <p>📱 <a href="tel:+50947921790">(509) 4792-1790</a></p>
+                    <p>✉️ <a href="mailto:innotechplus1@gmail.com">innotechplus1@gmail.com</a></p>
+            <p>Abdias Brevil | WDD 231 Project</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/directory1.js" defer></script>
+    <script src="scripts/responsive-menu.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+
+
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Marriott International",
+        "address": "2015",
+        "phone": "(509) 234-5678",
+        "url": "https://www.marriott.com/fr/default.mi",
+        "category": "Hospitality",
+        "membership": "Gold"
+    },
+    {
+        "name": "Digicel",
+        "address": "2008",
+        "phone": "(509) 345-6789",
+        "url": "https://www.digicelgroup.com/ht/fr",
+        "category": "Telecommunications",
+        "membership": "Silver"
+    },
+   
+    
+    {
+        "name": "Le Nouvelliste",
+        "address": "1898",
+        "phone": "(509) 789-0123",
+        "url": "https://lenouvelliste.com/",
+        "category": "Media",
+        "membership": "Silver"
+    }
+    
+]
