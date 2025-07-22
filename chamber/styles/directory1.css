@@ -132,10 +132,10 @@
 /* Home Grid Layout */
 .home-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
     gap: 20px;
+    align-items: start; /* Align items at the top */
 }
-
 /* Section Styles */
 section {
     background-color: #684a4a;

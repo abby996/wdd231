@@ -4,7 +4,7 @@ async function displaySpotlights() {
         const response = await fetch('data/members1.json');
         const members = await response.json();
         
-        // Filter gold, silver and Bronze members
+        // Filter gold and silver members
         const qualifiedMembers = members.filter(member => 
             ['gold', 'silver', 'Bronze'].includes(member.membership.toLowerCase())
         );
