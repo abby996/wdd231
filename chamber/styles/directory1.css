@@ -314,3 +314,10 @@ section {
     clip-path: inset(100%); 
     white-space: nowrap;
 }
+
+
+.spotlight-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 5rem;
+}
