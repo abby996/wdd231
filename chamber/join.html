@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Abdias brevil">
+    <meta name="description" content="Official business directory of Innotech Plus Chamber of Commerce in Haiti">
+    <meta property="og:title" content="Innotech Plus Haiti Business Directory">
+    <meta property="og:description" content="Explore member businesses of Innotech Plus Chamber of Commerce in Haiti">
+    <meta property="og:url" content="https://www.innotechplus.com/directory">
+    <meta property="og:image" content="https://innotechplus.com/images/innotechplus.jpg">
+    <link rel="icon" href="../images/favicon.ico">
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/directory1.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <title>Innotech Plus Haiti Business Directory | Innotech Plus Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="../images/globe2.svg" alt="Chamber Logo">
+            <span class="chamber-name">Innotech Plus Chamber of Commerce</span>
+        </div>
+
+        <nav>
+            <button id="hamburger" aria-label="Menu">☰</button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory1.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><img src="../images/facebook.svg" alt="Facebook"></a>
+            <a href="#" aria-label="LinkedIn"><img src="../images/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+    </header>
+
+    <main>   
+        <form method="Get"  action="thankyou.html">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" title="Enter your first name" autocomplete="given-name" required>
+             <br>
+             <label for="last-name">Last Name</label>
+             <input type="text" id="last-name" name="last-name" title="Enter your last name" autocomplete="family-name" required>
+             
+             <br>
+             <label for="org-title"> Organizational Title</label>
+             <input type="text" id="org-title" name="org-title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-Z\-\s]{7,}" required>
+
+             <br>
+             <label for="email"> Email</label>
+             <input type="email" id="email" name="email" titel=" Enter your email address" autocomplete="email" placeholder="example@gmail.com" required>
+
+            <br>
+            <label type="phone"> Mobile Phone</label>
+            <input type="tel" id="phone" name="mobile-phone" title="Enter your mobile phone number" autocomplete="tel" required>
+
+            <br>
+            <label for="org-name">Business/Organization's name</label>
+            <input type="text" id="org-name" name="org-name" title="Enter your Business organization's nme" autocomplete="organization" required>
+
+
+             <br>
+             <label for="membership-level"> Membership Level</label>
+             <select id="membership" name="membership-level" required>
+             <option value desabled selected>--select a level--</option>
+             <option value="np">NP memnbership (Non-Profit, Free) </option>
+             <option value="bronze">Bronze Membership</option>
+             <option value="silver">Silver Membership></option>
+             <option value="gold"> Gold Membership</option>
+
+             </select>
+
+             <label for="description">Business/Organization's Description</label>
+             <textarea id="description" name="organization-description" title="Discribe your business or your organistion" required></textarea>
+              
+        
+             <br>
+             <input type="hidden" id="timestamp" name="timestamp" value>
+             <button type="submit"> Submit application</button>
+        
+        
+        
+        
+        
+        </form>
+
+        <div class="membership-cards">
+            <div class="membership-card">
+                <h3>NP Membership</h3>
+                <a href="#np-modal">Learn More</a>
+            </div>
+            <div class="membership-card">
+                <h3>Bronze Membership</h3>
+                <a href="#bronze-modal">Learn More</a>
+            </div>
+             <div class="membership-card">
+                <h3>Silver Membership</h3>
+                <a href="#silver-modal">Learn More</a>
+            </div>
+             <div class="membership-card">
+                <h3>Gold Membership</h3>
+                <a href="#gold-modal">Learn More</a>
+            </div>
+             <div id="membership-model" class="modal">
+                <div class="modal-content">
+                    <span id="close-modal">x</span>
+                    <div id="modal-details"></div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="contact-info">
+              
+                <address>
+                    
+                </address>
+            </div>
+         
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Innotech Plus Chamber of Commerce</p>
+            <p>19 Main Street, Pétion-Ville, Haiti</p>
+                    <p>📱 (509) 4792-1790</p>
+                    <p>✉️ innotechplus1@gmail.com</p>
+            <p>Abdias Brevil | WDD 231 Project</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/directory1.js" defer></script>
+    <script src="scripts/responsive-menu.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+
+
+
+</body>
+
+
+
+</html>
