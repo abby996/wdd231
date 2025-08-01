@@ -73,8 +73,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     // Affichage du timestamp lors de la commande
-    orderForm.addEventListener("submit", () => {
+    
+});
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    const timestampElement = document.getElementById("order-timestamp");
+
+    if (timestampElement) {
         const timestamp = new Date().toLocaleString();
-        document.getElementById("order-timestamp").textContent = timestamp;
-    });
+        timestampElement.textContent = `Last updated: ${timestamp}`;
+    }
 });
