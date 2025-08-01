@@ -83,6 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (timestampElement) {
         const timestamp = new Date().toLocaleString();
-        timestampElement.textContent = `Last updated: ${timestamp}`;
+        timestampElement.textContent = `Last Order: ${timestamp}`;
     }
 });
