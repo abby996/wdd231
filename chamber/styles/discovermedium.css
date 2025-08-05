@@ -1,0 +1,92 @@
+/* Medium Screen Styles (641px - 1024px) */
+@media only screen and (min-width: 38rem) {
+    .grid-container {
+        display: grid;
+        gap: 20px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        grid-template-areas:
+            "image name"
+            "image description"
+            "image address"
+            "image button";
+        gap: 10px;
+        align-items: start;
+    }
+
+    .card figure {
+        grid-area: image;
+        margin: 0;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .card h2 {
+        grid-area: name;
+        margin: 0;
+    }
+
+    .card p {
+        grid-area: description;
+        margin: 0;
+    }
+
+    .card address {
+        grid-area: address;
+        font-style: normal;
+        margin: 0;
+    }
+
+    .card button {
+        grid-area: button;
+        justify-self: start;
+    }
+}
+
+
+/* Large Screen Styles (1025px and above) */
+@media (min-width: 1025px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .card {
+        display: grid;
+        grid-template-areas:
+            "image name"
+            "image description"
+            "image address"
+            "button button";
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .card h2 {
+        grid-area: name;
+    }
+
+    .card img {
+        grid-area: image;
+    }
+
+    .card p {
+        grid-area: description;
+    }
+
+    .card address {
+        grid-area: address;
+    }
+
+    .card button {
+        grid-area: button;
+    }
+}
