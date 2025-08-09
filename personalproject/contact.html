@@ -1,0 +1,53 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - repair-devices</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="scripts/contact.js">defer</script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Explain the problem of your devices</h1>
+    </header>
+
+    <main>
+        <form id="order-form">
+
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required="">
+
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required="">
+
+
+            <label for="product-name">Type of device:</label>
+            <input type="text" id="product-name" name="product-name" required="">
+
+
+            <label for="message">Detail of problem:</label>
+            <textarea id="message" name="message" required=""></textarea>
+
+            <button type="submit">Send information</button>
+
+        </form>
+    </main>
+    <div id="order-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <h2>Submit Confirmation</h2>
+            <p id="modal-message"></p>
+            <button id="close-modal">Close</button>
+        </div>
+    </div>
+    <footer>
+        <p>© <span id="current-year">2025</span> AbbyTech Repair</p>
+        <p>Order Timestamp: <span id="order-timestamp"></span></p>
+    </footer>
+
+
+
+
+</body></html>
