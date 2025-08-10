@@ -117,7 +117,7 @@ function filterServices(filterType) {
     renderServices(filteredServices);
 }
 
-// Show service details in modal with image
+// Show service details in modal with image// array find method
 function showServiceDetails(serviceId) {
     selectedService = allServices.find(service => service.id === parseInt(serviceId));
     

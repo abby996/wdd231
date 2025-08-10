@@ -482,3 +482,80 @@ button {
 .btn:hover {
     background-color: #ff4500;
 }
+
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+
+    
+.menu-toggle {
+    display: flex;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ff6347;
+}
+
+
+
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .service-content {
+        flex-direction: column;
+    }
+
+    .reverse .service-content {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 769px) {
+    .service-content {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .reverse .service-content {
+        flex-direction: row-reverse;
+    }
+
+    .service-info {
+        text-align: left;
+    }
+
+}
